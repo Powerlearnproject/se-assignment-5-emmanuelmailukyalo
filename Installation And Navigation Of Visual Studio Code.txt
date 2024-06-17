@@ -1,0 +1,196 @@
+## Installation and Navigation of Visual Studio Code (VS Code)
+
+### 1. Installation of VS Code
+
+**Steps to Download and Install Visual Studio Code on Windows 11:**
+
+1. **Download VS Code:**
+   - Visit the [official Visual Studio Code website](https://code.visualstudio.com/).
+   - Click on the "Download" button for Windows. This will download the VS Code installer (`.exe` file).
+
+2. **Run the Installer:**
+   - Locate the downloaded `.exe` file and double-click to run it.
+   - Follow the on-screen instructions in the setup wizard.
+   - Accept the license agreement.
+   - Choose the installation location (default is `C:\Users\{Username}\AppData\Local\Programs\Microsoft VS Code`).
+   - Select additional tasks such as creating a desktop icon and adding VS Code to the PATH (recommended).
+   - Click "Install" and wait for the installation to complete.
+   - Click "Finish" to exit the setup wizard.
+
+**Prerequisites:**
+   - Ensure you have administrative privileges to install software on your machine.
+   - Optionally, install Git if you plan to use version control with Git (download from [git-scm.com](https://git-scm.com/)).
+
+### 2. First-time Setup
+
+**Initial Configurations and Settings for an Optimal Coding Environment:**
+
+1. **Settings:**
+   - Open VS Code.
+   - Go to `File` > `Preferences` > `Settings` or press `Ctrl + ,`.
+   - Adjust settings such as font size, theme, and editor settings.
+   - Example:
+     ```json
+     {
+       "editor.fontSize": 14,
+       "workbench.colorTheme": "Visual Studio Dark",
+       "editor.formatOnSave": true
+     }
+     ```
+
+2. **Extensions:**
+   - Click on the Extensions icon in the Activity Bar or press `Ctrl + Shift + X`.
+   - Install essential extensions:
+     - Python
+     - ESLint
+     - Prettier - Code formatter
+     - GitLens — Git supercharged
+     - Live Share
+     - Bracket Pair Colorizer
+
+3. **Python Interpreter:**
+   - If using Python, select the interpreter by opening the Command Palette (`Ctrl + Shift + P`), typing "Python: Select Interpreter," and choosing the appropriate version.
+
+### 3. User Interface Overview
+
+**Main Components of the VS Code User Interface:**
+
+1. **Activity Bar:**
+   - Located on the far left.
+   - Contains icons for Explorer, Search, Source Control, Run and Debug, Extensions, and other extensions.
+   - Purpose: Navigate between different views and tools.
+
+2. **Side Bar:**
+   - Located next to the Activity Bar.
+   - Displays different panels based on the Activity Bar selection (e.g., File Explorer, Source Control).
+   - Purpose: Provide detailed views and interactions related to the selected activity.
+
+3. **Editor Group:**
+   - Central area where files are opened and edited.
+   - Multiple editors can be opened side by side (split view).
+   - Purpose: Main workspace for coding and editing files.
+
+4. **Status Bar:**
+   - Located at the bottom of the window.
+   - Displays information about the current file, such as line number, column number, language mode, and git status.
+   - Purpose: Provide contextual information and shortcuts for commands.
+
+### 4. Command Palette
+
+**What is the Command Palette in VS Code and How to Access it:**
+
+- The Command Palette provides a quick way to access and execute commands.
+- Access it by pressing `Ctrl + Shift + P` or `F1`.
+- Examples of tasks:
+  - Change color theme: `Preferences: Color Theme`
+  - Open settings: `Preferences: Open Settings (JSON)`
+  - Git commands: `Git: Commit`
+
+### 5. Extensions in VS Code
+
+**Role of Extensions and How to Manage Them:**
+
+- **Role:** Extensions enhance functionality and support for various languages, tools, and frameworks.
+- **Finding Extensions:**
+  - Click the Extensions icon in the Activity Bar or press `Ctrl + Shift + X`.
+  - Browse or search for specific extensions.
+- **Installing Extensions:**
+  - Click "Install" on the extension's page.
+- **Managing Extensions:**
+  - Enable, disable, or uninstall from the Extensions view.
+- **Essential Extensions for Web Development:**
+  - Live Server
+  - HTML CSS Support
+  - JavaScript (ES6) code snippets
+  - Debugger for Chrome
+
+### 6. Integrated Terminal
+
+**How to Open and Use the Integrated Terminal:**
+
+- Open the integrated terminal by pressing `Ctrl + `` or via `View` > `Terminal`.
+- **Advantages:**
+  - Directly run commands within VS Code without switching to an external terminal.
+  - Seamless integration with the editor, allowing quick file operations and version control commands.
+
+### 7. File and Folder Management
+
+**Creating, Opening, and Managing Files and Folders:**
+
+1. **Create a New File/Folder:**
+   - Right-click in the Explorer view and select `New File` or `New Folder`.
+   - Use the `File` > `New File` menu option or `Ctrl + N`.
+
+2. **Open Files/Folders:**
+   - Drag and drop files/folders into the VS Code window.
+   - Use `File` > `Open File` or `Open Folder`.
+
+3. **Navigation:**
+   - Quickly switch between files using `Ctrl + P`.
+   - Use breadcrumbs at the top of the editor to navigate directories.
+
+### 8. Settings and Preferences
+
+**Customizing Settings in VS Code:**
+
+- **Access Settings:**
+  - Go to `File` > `Preferences` > `Settings` or press `Ctrl + ,`.
+- **Change Theme:**
+  - Open Command Palette (`Ctrl + Shift + P`), type "Preferences: Color Theme," and select a theme.
+- **Change Font Size:**
+  - Search for `editor.fontSize` in settings and adjust.
+- **Change Keybindings:**
+  - Go to `File` > `Preferences` > `Keyboard Shortcuts` or press `Ctrl + K Ctrl + S`.
+
+### 9. Debugging in VS Code
+
+**Setting Up and Starting Debugging:**
+
+1. **Open a Project/File:**
+   - Open the file or project you want to debug.
+
+2. **Add a Debug Configuration:**
+   - Click the Run and Debug icon in the Activity Bar.
+   - Click on "create a launch.json file" and select the environment (e.g., Node.js, Python).
+
+3. **Start Debugging:**
+   - Set breakpoints by clicking in the gutter next to the line numbers.
+   - Click the green play button or press `F5` to start debugging.
+
+4. **Key Debugging Features:**
+   - Breakpoints
+   - Step over, step into, step out
+   - Watch variables
+   - Debug console
+
+### 10. Using Source Control
+
+**Integrating Git with VS Code:**
+
+1. **Initialize a Repository:**
+   - Open the folder for your project.
+   - Click the Source Control icon in the Activity Bar.
+   - Click "Initialize Repository" or run `git init` in the integrated terminal.
+
+2. **Making Commits:**
+   - Stage changes by clicking the `+` icon next to changed files or use `git add` in the terminal.
+   - Enter a commit message and click the checkmark icon or use `git commit -m "message"`.
+
+3. **Pushing Changes to GitHub:**
+   - Set up a remote repository on GitHub.
+   - Add the remote in VS Code using the terminal:
+     ```sh
+     git remote add origin https://github.com/yourusername/trial-1.git
+     git push -u origin main
+     ```
+
+### Submission Details
+- **Document Submission:** Email the document to emmanuel.k.mailu20@gmail.com by the specified deadline.
+- **GitHub Repository:** [trial-1 GitHub Repository](https://github.com/emmanuelmailukyalo/trial-1.git)
+
+### Evaluation Criteria
+- **Completeness and accuracy of setup documentation.**
+- **Effectiveness of version control implementation.**
+- **Appropriateness of tools selected for the project requirements.**
+- **Clarity of reflection on challenges and solutions encountered.**
+- **Adherence to submission guidelines and deadlines.**
